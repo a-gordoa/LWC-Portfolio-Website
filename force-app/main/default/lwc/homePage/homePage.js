@@ -33,8 +33,12 @@ export default class HomePage extends LightningElement {
         }
     }
 
+
+    
     get lampHeader(){
-        return `background-color:blue;background-image:url(${this.lamps})`;
+        //return `background-color:blue;background-image:url(${this.lamps})`
+        return `background-color:blue;background-image:url(${LAMPS})`;
+        // return 'background-color:blue; background-image:url(`/resource/1672790391000/lamps`);';
     }
 
 

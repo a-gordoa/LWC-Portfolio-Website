@@ -20,14 +20,15 @@ projectList = [
         image: `${TO_DO_IMAGE}`,
         githubLink: 'https://github.com/a-gordoa/Spotify-LWC-Project',
         techList: ['@wire', ]
-    },
-    {
-        name:'One last project',
-        description:'This is a description for the To Do app that I haven\'t build',
-        image: `${SPOTIFYLOGO}`,
-        githubLink: 'https://github.com/a-gordoa/Spotify-LWC-Project',
-        techList: ['@wire', ]
     }
+    // ,
+    // {
+    //     name:'One last project',
+    //     description:'This is a description for the To Do app that I haven\'t build',
+    //     image: `${SPOTIFYLOGO}`,
+    //     githubLink: 'https://github.com/a-gordoa/Spotify-LWC-Project',
+    //     techList: ['@wire', ]
+    // }
 ]
 
 }

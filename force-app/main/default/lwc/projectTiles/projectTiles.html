@@ -6,25 +6,48 @@
         <div class=" slds-grid"> <!-- class = c-container -->
             <!-- For Loop  -->
             <template for:each={projectList} for:item="project" >
-                <div key={project.name} class="slds-size_1-of-3 slds-p-around_small service-card">
-                    <lightning-layout-item padding="around-small" >
+                    <lightning-layout-item key={project.name} size="6" padding="around-small" >
                         <!-- Main body texts -->
-                        <div class="slds-var-p-around_medium service-card tile">
+                        <div class="slds-var-p-around_medium service-card tile" onclick={handleProjectNavigation} data-id={project.navName}>
                             <div class="body">
-                                <H1 href="https://google.com" class="icon title">{project.name}</H1>
-                                <img src={project.image} width="200" height="200">
-                                <div>
-                                    <p class="subtitle">{project.description}</p>    
+                                <H1 class="icon title">{project.displayName}</H1>
+                                <div class="slds-grid">
+                                    <div class="slds-size_1-of-3">
+                                        <img src={project.image} width="200" height="200">
+                                    </div>    
+                                    
+                                    <div class="slds-size_2-of-3">
+                                        <p >{project.description}</p>    
+                                    </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </lightning-layout-item>
-                </div>
                 
             </template>
         </div>
     </lightning-card>
 </template>
+
+
+<!-- <template for:each={projectList} for:item="project" >
+    <div key={project.name} class="slds-size_1-of-3 slds-p-around_small service-card">
+        <lightning-layout-item padding="around-small" >
+            //Main body texts
+            <div class="slds-var-p-around_medium service-card tile">
+                <div class="body">
+                    <H1 href="https://google.com" class="icon title">{project.name}</H1>
+                    <img src={project.image} width="200" height="200">
+                    <div>
+                        <p class="subtitle">{project.description}</p>    
+                    </div>
+                </div>
+            </div>
+        </lightning-layout-item>
+    </div>
+    
+</template> -->
 
 
 <!-- 
@@ -52,6 +75,4 @@
         <img src={project.image} width="200" height="200" >
     </div>
 </lightning-card>
-
-    
  -->

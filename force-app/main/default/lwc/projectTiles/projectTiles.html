@@ -10,14 +10,14 @@
                         <!-- Main body texts -->
                         <div class="slds-var-p-around_medium service-card tile" onclick={handleProjectNavigation} data-id={project.navName}>
                             <div class="body">
-                                <H1 class="icon title">{project.displayName}</H1>
-                                <div class="slds-grid">
+                                <H1 class="icon title slds-text-heading_medium slds-m-bottom_large slds-align_absolute-center">{project.displayName}</H1>
+                                <div class="slds-grid slds-m-top_medium">
                                     <div class="slds-size_1-of-3">
                                         <img src={project.image} width="200" height="200">
                                     </div>    
                                     
                                     <div class="slds-size_2-of-3">
-                                        <p >{project.description}</p>    
+                                        <p class="slds-m-left_medium">{project.description}</p>    
                                     </div>
                                 </div>
                                 

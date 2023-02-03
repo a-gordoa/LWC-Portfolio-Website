@@ -1,0 +1,5 @@
+@import 'c/cssLibrary';
+
+.nav-background_custom {
+    background-color: RGB(240,240,240);
+}

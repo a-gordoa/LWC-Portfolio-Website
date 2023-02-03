@@ -1,56 +1,142 @@
 <template>
 
-         <!-- page header -->
-    <header id="home" class="header" > <!-- style={lampHeader} -->
-        
-        <div >
-            <div class="overlay" ></div>
+<div class="background-gradient">
+    <!-- page header -->
+    <header id="home" class="header" > 
+        <div class="slds-m-around_large">
+            
             <div class="header-content container ">
-                <h1 class="header-title">
-                    <span class="up">HI!</span>
-                    <span class="down">I'm Anthony Gordoa</span>
-                </h1>
-                <p class="header-subtitle">SALESFORCE ADMIN + DEVELOPER</p>            
 
+                <div class="slds-grid">
+                    <!-- purposesly left blank, for spacing -->
+                    <div class="slds-size_1-of-5">
+                    </div>
+
+                    <!-- Middle section with greeting -->
+                    <div class="slds-size_3-of-5">
+                            <div class="slds-grid">
+                                <div class="slds-size_1-of-4">
+                                    <div class="about-img-holder slds-m-around_large" >
+                                        <img src={headshot} class="about-img" alt="Image of Anthony Gordoa">
+                                    </div>
+                                    <!-- <lightning-tile label='' type="media" >
+                                        <lightning-avatar variant="circle" src={headshot}></lightning-avatar>
+                                      </lightning-tile> -->
+                                </div>
+                                <div class="slds-size_3-of-4" >
+                                    <h1 class="header-title slds-m-around_medium">
+                                        <span class="up slds-m-top_large">HI!</span>
+                                        <span class="down slds-m-top_large">I'm Anthony Gordoa</span>
+                                    </h1>
+                                    <div class="slds-grid slds-m-around_medium">
+                                        <lightning-icon class="slds-m-right_medium" style="margin-bottom: 20px;" icon-name="utility:salesforce1" alternative-text="Connected" size="small" title="small size">
+                                        </lightning-icon>
+                                        <p class="header-subtitle slds-m-top_large">SALESFORCE ADMIN + DEVELOPER</p>            
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <!-- purposesly left blank, for spacing -->
+                    <div class="slds-size_1-of-5">
+                    </div>
+                </div>
                 <button class="btn btn-primary">Links to my Lightning Web Componenets</button>
-            </div>              
+            </div>
         </div>
     </header><!-- end of page header -->
-    
-    <!-- about section -->
-    <section class="section pt-0 lampHeader" id="about" >
-        <!-- <img src={lamps} class="" alt="lamps"> -->
-        <!-- container -->
-        <div class="container text-center" >
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src={headshot} class="about-img" alt="Image of Anthony Gordoa">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        I'm a Salesforce profressional with 2+ years Salesforce Admin expereince, 3 active Salesforce Certifications (Platform Developer 1,
-                        Administrator, Platform App Builder), and 8 years experience as a Salesforce end user in Account Manamgent and Customer Success roles. 
-                    </p>
-                    <p>My experience includes proficiency in: </p>
-                    <ul class="slds-list_dotted">
-                        <li class="section-subtitle" style="color:#000"> Flow/Process Builder </li>
-                        <li class="section-subtitle" style="color:#000"> Data Loader </li>
-                        <li class="section-subtitle" style="color:#000"> Reports and Dashboards </li>
-                        <li class="section-subtitle" style="color:#000"> Managing Permissions, Security, and Profile settings</li>
-                        <li class="section-subtitle" style="color:#000"> Building Lightning Web Components </li>
-                        <li class="section-subtitle" style="color:#000"> Writing Apex Classes and Triggers </li>
-                        <li class="section-subtitle" style="color:#000"> Requirements Gathering </li>
-                    </ul>
 
-                    <p>I have a strong commitment to delivering high-quality work and exceeding customer expectations. My ability to effectively communicate with cross-functional teams and collaborate with stakeholders makes me an asset to any organization.</p>
-                    <!-- <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button> -->
-                </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-
+    <!--  Tab Card -->
+    <div class="slds-grid">
+        <div class="slds-size_1-of-5"></div>
+        <div class="slds-size_3-of-5">
         
+            <!-- Card for tabs -->
+            <article class="slds-card">
+                
+                <div class="slds-card__header slds-grid">
+                    
+                    <!--  Tabs -->
+                    <lightning-tabset>
+                        <!-- Tab 1 - About Me -->
+                        <lightning-tab label="About Me">
+                            <div  data-id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
+
+                                <p>
+                                    I'm a Salesforce profressional with 2+ years Salesforce Admin expereince, 3 active Salesforce Certifications (Platform Developer 1,
+                                    Administrator, Platform App Builder), and 8 years experience as a Salesforce end user in Account Manamgent and Customer Success roles. 
+                                </p>
+                                <p>My experience includes proficiency in: </p>
+                                <ul class="slds-list_dotted">
+                                    <li class="section-subtitle" style="color:#000"> Flow/Process Builder </li>
+                                    <li class="section-subtitle" style="color:#000"> Data Loader </li>
+                                    <li class="section-subtitle" style="color:#000"> Reports and Dashboards </li>
+                                    <li class="section-subtitle" style="color:#000"> Managing Permissions, Security, and Profile settings</li>
+                                    <li class="section-subtitle" style="color:#000"> Building Lightning Web Components </li>
+                                    <li class="section-subtitle" style="color:#000"> Writing Apex Classes and Triggers </li>
+                                    <li class="section-subtitle" style="color:#000"> Requirements Gathering </li>
+                                </ul>
+                    
+                                <p>I have a strong commitment to delivering high-quality work and exceeding customer expectations. My ability to effectively communicate with cross-functional teams and collaborate with stakeholders makes me an asset to any organization.</p>
+                    
+                            </div>
+
+                        </lightning-tab>
+                        <!-- Tab 2 - Experience -->
+                        <lightning-tab label="Experience"> Content for tab 2 </lightning-tab>
+
+                        <!-- Tab 3 - Education/Certifications -->
+                        <lightning-tab label="Education">  
+                            <div class="slds-m-top_medium">
+                                <h2 class="slds-text-heading_medium"> Salesforce Certifications</h2>
+                                    <div class="slds-m-left_large">
+                                        <p class="slds-text-heading_small">Platform Developer 1</p>
+                                        <ul class="slds-list_dotted">
+                                            <li class="section-subtitle" style="color:#000"> November 2022 </li>
+                                            <li class="section-subtitle" style="color:#000"> Credential ID # 2734265 </li>
+                                        </ul>
+
+                                        <p class="slds-text-heading_small">Platform App Builder</p>
+                                        <ul class="slds-list_dotted">
+                                            <li class="section-subtitle" style="color:#000"> Sept 2020 </li>
+                                            <li class="section-subtitle" style="color:#000"> Credential ID # 21506795 </li>
+                                        </ul>
+
+                                        <p class="slds-text-heading_small">Administrator</p>
+                                        <ul class="slds-list_dotted">
+                                            <li class="section-subtitle" style="color:#000"> June 2020 </li>
+                                            <li class="section-subtitle" style="color:#000"> Credential ID # 21303874 </li>
+                                        </ul>
+
+                                    </div>
+                                    
+                                
+                                <h2 class="slds-text-heading_medium">College</h2> 
+                                <div class="slds-m-left_large ">
+                                    <p class="slds-text-heading_small">University of the Pacific - 2009 - 2013</p>
+                                    <ul class="slds-list_dotted">
+                                        <li class="section-subtitle" style="color:#000"> Bachelors in Music Management </li>
+                                        <li class="section-subtitle" style="color:#000"> Minor Business Management </li>
+                                    </ul>
+                                </div>    
+                            </div>
+                        </lightning-tab>
+
+                    </lightning-tabset>
+                </div>
+              </article>
+        </div>
+        <div class="slds-size_1-of-5"></div>
+    </div>
+
+    <div class="slds-m-top_large slds-grid">
+        <div class="slds-size_1-of-5"></div>
+        <div class="slds-size_3-of-5">
+            <c-project-tiles></c-project-tiles>
+        </div>
+        <div class="slds-size_1-of-5"></div>
+        
+    </div>
+</div>
 </template>

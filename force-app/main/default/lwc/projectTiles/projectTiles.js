@@ -12,7 +12,7 @@ projectList = [
         description:'This component uses the Spotify API to allow users to create and edit Spotfy Playlists directly within the component',
         image: `${SPOTIFYLOGO}`,
         githubLink: 'https://github.com/a-gordoa/Spotify-LWC-Project',
-        techList: ['@wire', 'javascript',],
+        techList: [{item1: '@wire', item2:'Javascript'}],
         navName: 'Spotify'
 
     },
@@ -21,7 +21,7 @@ projectList = [
         description:'This component uses a drag and drop interface similar to a Kanban system to organize a to-do list created by the user. The to-do\'s are stored in a custom object called To Do Item which has fields to store the subject, due date, priority and notes.',
         image: `${TO_DO_IMAGE}`,
         githubLink: 'https://github.com/a-gordoa/Spotify-LWC-Project',
-        techList: ['@wire', ],
+        techList: [{item1: '@wire2', item2:'Javascript2'}],
         navName: 'ToDoList'
     }
     // ,
@@ -33,6 +33,11 @@ projectList = [
     //     techList: ['@wire', ]
     // }
 ]
+
+// techList = [
+//     {item1: '@wire', item2:'Javascript'},
+//     {item1: 'REST API', item2:'SOQL'}
+// ]
 
     handleProjectNavigation(event) {
 

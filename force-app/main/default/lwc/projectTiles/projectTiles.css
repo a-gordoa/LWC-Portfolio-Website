@@ -1,7 +1,7 @@
 @import 'c/cssLibrary';
 
 .tile {
-    height:300px;
+    height:350px;
     /* width:600px; */
     /* border-width: 2px; */
     border-style: solid;

@@ -9,7 +9,7 @@ export default class ProjectTiles extends NavigationMixin(LightningElement) {
 projectList = [
     {
         displayName:'Spotify Playlist App',
-        description:'This component uses the Spotify API to allow users to create and edit Spotfy Playlists directly within the component',
+        description:'This component uses the Spotify API to allow users to create and edit Spotfy Playlists directly within the component. This is achieved using HTTP Callouts to Spotify’s API which returns search results from Spotify’s database to a datatable within the component. Once a user selects that songs from the search results, those selections are sent back to Spotify and stored in the playlist that the user created.',
         image: `${SPOTIFYLOGO}`,
         githubLink: 'https://github.com/a-gordoa/Spotify-LWC-Project',
         techList: [{item1: '@wire', item2:'Javascript'}],
@@ -24,20 +24,7 @@ projectList = [
         techList: [{item1: '@wire2', item2:'Javascript2'}],
         navName: 'ToDoList'
     }
-    // ,
-    // {
-    //     name:'One last project',
-    //     description:'This is a description for the To Do app that I haven\'t build',
-    //     image: `${SPOTIFYLOGO}`,
-    //     githubLink: 'https://github.com/a-gordoa/Spotify-LWC-Project',
-    //     techList: ['@wire', ]
-    // }
 ]
-
-// techList = [
-//     {item1: '@wire', item2:'Javascript'},
-//     {item1: 'REST API', item2:'SOQL'}
-// ]
 
     handleProjectNavigation(event) {
 
